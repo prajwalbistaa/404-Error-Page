@@ -75,5 +75,5 @@ a:hover {
 }
 
 a{
-    
+    animation: pulse 2s infinite;
 }
