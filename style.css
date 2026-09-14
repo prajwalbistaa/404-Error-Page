@@ -21,7 +21,7 @@ img {
   margin-bottom: 1.5rem;
 }
 
-h1 { 
+h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -33,7 +33,7 @@ p {
 }
 
 a {
-  background-color:rgba(248, 29, 29, 0.8);
+  background-color: rgba(248, 29, 29, 0.8);
   color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
@@ -60,20 +60,40 @@ a:hover {
   }
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(222, 76, 74, 0.7);
-  }
-
-  70% {
-    box-shadow: 0 0 0 10px rgba(222, 74, 74, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(222, 74, 74, 0);
-  }
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
 }
 
-a{
-    animation: pulse 2s infinite;
+.buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0px 7px rgba(212, 14, 14, 0.8);
+}
+
+#goBack {
+  background: rgba(248, 29, 29, 0.8);
+  color: white;
+}
+
+#tryAgain {
+  background: white;
+  color: rgba(248, 29, 29, 0.8);
+  border: 1px solid rgba(248, 29, 29, 0.8);
+}
+
+.illustration {
+  transition: transform 0.15s ease-out;
 }
