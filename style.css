@@ -32,20 +32,6 @@ p {
   margin-bottom: 2rem;
 }
 
-a {
-  background-color: rgba(248, 29, 29, 0.8);
-  color: white;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-a:hover {
-  background-color: rgba(212, 14, 14, 0.8);
-}
-
 @media (max-width: 600px) {
   img {
     max-width: 400px;
@@ -80,7 +66,7 @@ a:hover {
 
 .buttons button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0px 7px rgba(212, 14, 14, 0.8);
+  box-shadow: 0 3px 10px rgba(212, 14, 14, 0.8);
 }
 
 #goBack {
