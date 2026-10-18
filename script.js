@@ -23,10 +23,3 @@ goBackButton.addEventListener("click", () => {
 tryAgainButton.addEventListener("click", () => {
     window.location.reload();
 });
-
-document.addEventListener("mousemove", (event) => {
-    const x = (window.innerWidth / 2 - event.clientX) / 40;
-    const y = (window.innerHeight / 2 - event.clientY) / 40;
-
-    illustration.style.transform = `translate(${x}px, ${y}px)`;
-});
